@@ -31,7 +31,9 @@ app.get('/',async(req,res)=>{
         console.log(error)
        }
 })
-
+app.get('/about',(req,res)=>{
+    res.send("Hello this is about page");
+})
 const start=async()=>{
    try {
     await model.deleteMany()
